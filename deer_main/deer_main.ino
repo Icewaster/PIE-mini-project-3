@@ -90,7 +90,7 @@ float read_filtered_distance() {
   for (int i = 0; i < 5; i++) {
     long duration = pulseDuration();
     if (duration > 0) {
-      float cm = duration * 0.0343 / 2;
+      float cm = duration * 0.034 / 2;
       if (cm >= 2 && cm <= 400) {
         readings.push_back(cm);
       }
